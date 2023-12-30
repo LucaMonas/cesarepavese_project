@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".SettingsActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- Settings -->
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="32dp"/>
+
+    <!-- General -->
+    <TextView
+        android:id="@+id/generalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsText"
+        android:layout_alignEnd="@+id/settingsText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:text="General"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <!-- Schermata Resetta -->
+    <View
+        android:id="@+id/firstView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/generalText"
+        android:layout_alignStart="@+id/generalText"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_rectangle_settings" />
+
+    <!-- Immagine Resetta -->
+    <ImageView
+        android:id="@+id/rotateVector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/firstView"
+        android:layout_alignTop="@+id/firstView"
+        android:layout_alignBottom="@+id/firstView"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_baseline_rotate_right_24"/>
+
+    <!-- Testo Resetta -->
+    <TextView
+        android:id="@+id/resetquizText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/firstView"
+        android:layout_alignBottom="@+id/firstView"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/rotateVector"
+        android:text="Resetta il tuo quiz"
+        android:textColor="@color/onSecondaryContainer"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!-- Bottone Resetta -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/firstView"
+        android:layout_alignBottom="@+id/firstView"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/button_custom_settings"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+    <!-- Schermata Cambia -->
+    <View
+        android:id="@+id/secondtView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/firstView"
+        android:layout_alignStart="@+id/firstView"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_rectangle_settings" />
+
+    <!-- Immagine Cambia -->
+    <ImageView
+        android:id="@+id/personVector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/secondtView"
+        android:layout_alignTop="@+id/secondtView"
+        android:layout_alignBottom="@+id/secondtView"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_baseline_person_24"/>
+
+    <!-- Testo Cambia -->
+    <TextView
+        android:id="@+id/cambionomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/secondtView"
+        android:layout_alignBottom="@+id/secondtView"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/personVector"
+        android:text="Cambia nome utente"
+        android:textColor="@color/onSecondaryContainer"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!-- Bottone Cambia -->
+    <Button
+        android:id="@+id/cambionomeButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/secondtView"
+        android:layout_alignBottom="@+id/secondtView"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/button_custom_settings"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+    <!-- Schermata Gestisci -->
+    <View
+        android:id="@+id/thirdtView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/secondtView"
+        android:layout_alignStart="@+id/secondtView"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_rectangle_settings" />
+
+    <!-- Immagine Gestisci -->
+    <ImageView
+        android:id="@+id/groupVector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/thirdtView"
+        android:layout_alignTop="@+id/thirdtView"
+        android:layout_alignBottom="@+id/thirdtView"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_baseline_group_24"/>
+
+    <!-- Testo Gestisci -->
+    <TextView
+        android:id="@+id/gestisciamiciText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thirdtView"
+        android:layout_alignBottom="@+id/thirdtView"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/groupVector"
+        android:text="Gestisci amici"
+        android:textColor="@color/onSecondaryContainer"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!-- Bottone Gestisci -->
+    <Button
+        android:id="@+id/gestisciamiciButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/thirdtView"
+        android:layout_alignBottom="@+id/thirdtView"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/button_custom_settings"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+    <!-- FeedBack -->
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdtView"
+        android:layout_alignStart="@+id/thirdtView"
+        android:layout_marginTop="25dp"
+        android:text="Feedback"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <!-- Schermata Problema -->
+    <View
+        android:id="@+id/fourthView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/feedbackText"
+        android:layout_alignStart="@+id/feedbackText"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_rectangle_settings" />
+
+    <!-- Immagine Problema -->
+    <ImageView
+        android:id="@+id/reportVector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fourthView"
+        android:layout_alignTop="@+id/fourthView"
+        android:layout_alignBottom="@+id/fourthView"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_baseline_report_problem_24"/>
+
+    <!-- Testo Problema -->
+    <TextView
+        android:id="@+id/reportText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fourthView"
+        android:layout_alignBottom="@+id/fourthView"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/reportVector"
+        android:text="Riporta un problema"
+        android:textColor="@color/onSecondaryContainer"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!-- Bottone Problema -->
+    <Button
+        android:id="@+id/reportButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/fourthView"
+        android:layout_alignBottom="@+id/fourthView"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/button_custom_settings"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+    <!-- Bottone Disconnettiti -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fourthView"
+        android:layout_alignEnd="@+id/fourthView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="Disconnettiti"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red"
+        android:background="@drawable/button_custom_settings"/>
+
+
+
+
+
+
+</RelativeLayout>

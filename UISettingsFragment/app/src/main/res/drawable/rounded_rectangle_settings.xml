@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rounded_rectangle_settings.xml in res/drawable -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/secondaryCointainer" />
+    <corners android:radius="10dp" /> <!-- Raggio degli angoli -->
+</shape>
